@@ -82,7 +82,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-black flex justify-center items-center p-4 sm:p-8">
+    <div className="w-full min-h-screen bg-black flex flex-col justify-center items-center p-4 sm:p-8">
       <div className="w-[375px] h-[812px] bg-[#F4F5F7] rounded-[40px] overflow-hidden shadow-2xl relative border-[8px] border-gray-900 flex flex-col">
         {/* PROVIDER WRAPPED HERE */}
         <AIProvider cart={cart}>
@@ -95,6 +95,9 @@ const App: React.FC = () => {
         </AIProvider>
         <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-32 h-1 bg-gray-900 rounded-full z-[60] opacity-90"></div>
       </div>
+      <footer className="mt-8 text-center text-sm text-gray-500">
+        Built by Ajay Sharma · <a href="https://www.linkedin.com/in/workwithajay/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300 transition-colors">LinkedIn</a>
+      </footer>
     </div>
   );
 };
